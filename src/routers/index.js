@@ -38,6 +38,7 @@ export default function Routers() {
                 <AuthRoutes path="/auth/register" component={(props)=><Register socket={state.socket} {...props} />} />
                 <AuthRoutes path="/auth/login" component={(props)=><Login socket={state.socket} {...props} />} />
                 <AppRoute path="/app" component={(props)=><Main socket={state.socket} {...props} />} />
+                <AuthRoutes path="/" component={(props)=><Login socket={state.socket} {...props} />} />
             </Switch>
         </Router>
     )

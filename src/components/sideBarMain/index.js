@@ -39,7 +39,7 @@ export default function SideBarMain({ socket, openSideProfiBar }) {
     }
     return (
         <div>
-            <div style={{ height: "25%" }} className="px-4">
+            <div style={{ height: "25vh" }} className="px-4">
                 <div className="d-flex justify-content-between py-4">
                     <h2 className="m-0 color-main">Rilchat</h2>
                     <span className="material-icons color-main c-pointer fs-2" onClick={openSideProfiBar}>menu_open</span>
@@ -52,7 +52,7 @@ export default function SideBarMain({ socket, openSideProfiBar }) {
                     <span className="material-icons color-main c-pointer fs-2 align-self-center">add</span>
                 </div>
             </div>
-            <div className="overflow-auto mt-3" style={{ height: "75%" }}>
+            <div className="overflow-auto" style={{ minHeight: "75vh", maxHeight:"75vh" }}>
                 {/* component chat */}
                 {state.friends.map(item => {
                     if(item.id_user == data.id_user){

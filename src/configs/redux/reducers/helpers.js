@@ -1,6 +1,7 @@
 const initialstate = {
     isOpen: false,
     dataReciever: {},
+    chatBoardMobileOpen: false,
     chatBoardMobileOpen: false
 }
 
@@ -19,6 +20,7 @@ const helper = (state = initialstate, action) => {
         case "CLOSE_CHAT_ROOM_MOBILE":
             return {
                 ...state,
+                dataReciever: {},
                 chatBoardMobileOpen: false
             }
         case "SETUP_PRIVATE_CHAT":
