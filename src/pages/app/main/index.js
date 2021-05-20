@@ -82,7 +82,11 @@ export default function Main({ socket }) {
             let reader = new FileReader();
             reader.onload = (e) => {
                 if (event.target.files[0].type === "image/png" || event.target.files[0].type === "image/jpg" || event.target.files[0].type === "image/jpeg") {
-                    setState({ ...state, avatar: e.target.result, dataImg: event.target.files[0], changeStateImgUpdate: true });
+                    if(event.target.files[0].size > 3000000){
+                        swal("Oops", "hanya mendukung gambar di bawah 3Mb", "error")
+                    }else{
+                        setState({ ...state, avatar: e.target.result, dataImg: event.target.files[0], changeStateImgUpdate: true });
+                    }
                 } else {
                     swal("Oops", "hanya mendukung format gambar", "error")
                 }
