@@ -22,7 +22,7 @@ Frontend SayHello Apps
 ## 💻 How To Install?
 - Clone This Repo
 ```
-git clone https://github.com/therevolt/FE-SayHello
+git clone https://github.com/heatclift77/rillchat.git
 ```
 - Go To Folder Repo
 ```
