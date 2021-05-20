@@ -24,10 +24,6 @@ Frontend SayHello Apps
 ```
 git clone https://github.com/heatclift77/rillchat.git
 ```
-- Go To Folder Repo
-```
-cd FE-SayHello
-```
 - Open Command/Terminal
 - Type ``` npm start``` To Start Website
 
