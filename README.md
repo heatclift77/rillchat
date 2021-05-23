@@ -30,7 +30,8 @@ git clone https://github.com/heatclift77/rillchat.git
 
 ## 🔎 Preview Design <a name = "preview"></a>
 <span>
-    <img width="415" src="https://iili.io/Bk4W2p.jpg">   
+    <img width="415" src="https://iili.io/Bk4W2p.jpg">
+  <img width="415" src="https://iili.io/Bk4hvI.png">
 </span> 
 
 
