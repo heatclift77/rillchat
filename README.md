@@ -12,7 +12,8 @@
 ---
 
 ## 🧐 About
-Frontend SayHello Apps
+realtime chat web app made with socket.io for all realtime features, there are several features such as authentication, 
+online offline status, edit all profile data, ofcourse realtime chat. build with Reactjs in frontend side and Expressjs in the backend side
 
 ## 🔖Build With
 - ReactJS
@@ -28,7 +29,10 @@ git clone https://github.com/heatclift77/rillchat.git
 - Type ``` npm start``` To Start Website
 
 ## 🔎 Preview Design <a name = "preview"></a>
-Coming Soon
+<span>
+    <img width="415" src="https://ibb.co/XyVPds9">   
+</span> 
+
 
 ## 💻 Live Demo <a name = "live_demo"></a>
 Coming Soon
