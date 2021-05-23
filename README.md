@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=500px height=300px src="https://iili.io/Bk4hvI.png" alt="logo"></a>
+ <img width=500px height=300px src="https://iili.io/Bk61A7.jpg" alt="logo"></a>
 </p>
 <h3 align="center">Rillchat</h3>
 <div align="center">
@@ -30,8 +30,10 @@ git clone https://github.com/heatclift77/rillchat.git
 
 ## 🔎 Preview Design <a name = "preview"></a>
 <span>
-    <img width="415" src="https://iili.io/Bk4W2p.jpg">
-  <img width="415" src="https://iili.io/Bk4hvI.png">
+    <img width="415" src="https://iili.io/Bk609S.jpg">
+    <img width="415" src="https://iili.io/Bk61A7.jpg">
+    <img width="415" src="https://iili.io/Bk6EN9.jpg">
+    <img width="415" src="https://iili.io/Bk6Gte.jpg">
 </span> 
 
 
