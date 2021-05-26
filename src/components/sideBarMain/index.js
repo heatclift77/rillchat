@@ -41,7 +41,7 @@ export default function SideBarMain({ socket, openSideProfiBar }) {
         <div>
             <div style={{ height: "25vh" }} className="px-4">
                 <div className="d-flex justify-content-between py-4">
-                    <h2 className="m-0 color-main">Rilchat</h2>
+                    <h2 className="m-0 color-main">Rillchat</h2>
                     <span className="material-icons color-main c-pointer fs-2" onClick={openSideProfiBar}>menu_open</span>
                 </div>
                 <div className="d-flex justify-content-between">

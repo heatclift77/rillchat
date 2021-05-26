@@ -26,7 +26,7 @@ export default function Routers() {
         }
     },[])
     const setupSocket = () => {
-        const socket = io("http://localhost:5010")
+        const socket = io(process.env.REACT_APP_SERVER)
         setState({...state, socket:socket})
     }
     useEffect(()=>{

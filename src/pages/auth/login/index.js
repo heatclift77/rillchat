@@ -20,7 +20,7 @@ export default function Login() {
     const handleSubmit = () => {
         axios({
             method : "POST",
-            url : `http://localhost:5010/v1/user/login`,
+            url : `${process.env.REACT_APP_SERVER}/v1/user/login`,
             data : state.data
         }).then(res => {
             dispatch({

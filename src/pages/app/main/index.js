@@ -258,7 +258,7 @@ export default function Main({ socket }) {
                     {/* chat board */}
                     {/* <ScrollToBottom> */}
                         <div ref={scroll} style={{ background: "#FAFAFA", maxHeight: "80vh", minHeight:"80vh" }} className="overflow-auto" >
-                            <div className="px-4 d-flex flex-column justify-content-end h-100" style={{}}>
+                            <div className="px-4 d-flex flex-column justify-content-end" style={{minHeight:"79vh"}}>
                                 {state.chat.map(item => {
                                     let date = item.date
                                     if (item.id_user == data.id_user) {
@@ -267,13 +267,13 @@ export default function Main({ socket }) {
                                             <div className="p-4 text-black bg-white shadow d-flex" style={{ borderTopRightRadius: "0.8rem", borderBottomRightRadius: "2rem", borderTopLeftRadius: "2rem", borderBottomLeftRadius: "2rem", maxWidth: "400px", wordWrap: "break-word" }}>
                                                 <p className="m-0" style={{ maxWidth: "350px" }}>{item.message}</p>
                                             </div>
-                                            <div className="rounded-md d-flex justify-content-center ms-3 align-self-start" style={{ width: "60px", height: "60px" }}>
+                                            <div className="rounded-md d-flex justify-content-center ms-3 align-self-start overflow-hidden" style={{ width: "60px", maxHeight: "60px" }}>
                                                 <img src={data.img_profil} className="w-100 align-self-center rounded-md" />
                                             </div>
                                         </div>
                                     } else {
                                         return <div className="d-flex justify-content-start my-2">
-                                            <div className="rounded-md d-flex justify-content-center me-3 align-self-end" style={{ width: "60px", height: "60px" }}>
+                                            <div className="rounded-md d-flex justify-content-center me-3 align-self-end" style={{ width: "60px", maxHeight: "60px" }}>
                                                 <img src={dataReciever.img_profil} className="w-100 align-self-center rounded-md" />
                                             </div>
                                             <div className="p-4 text-white bg-main shadow d-flex" style={{ borderTopRightRadius: "2rem", borderBottomRightRadius: "2rem", borderTopLeftRadius: "2rem", borderBottomLeftRadius: "0.8rem", maxWidth: "400px", wordWrap: "break-word" }}>
