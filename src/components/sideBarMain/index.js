@@ -30,7 +30,7 @@ export default function SideBarMain({ socket, openSideProfiBar }) {
         setState({ ...state, loading: true })
         axios.get(`${process.env.REACT_APP_SERVER}/v1/user/search?id_user=${data.id_user}&key=${e.target.value}`)
             .then(res => {
-                if (res.data.data.length == 0) {
+                if (res.data.data.length === 0) {
                     setState({ ...state, friends: [], searchDataNotFoundMessage: `"${e.target.value}" tidak ditemukan`, loading: false })
                 } else {
                     setState({ ...state, friends: res.data.data, searchDataNotFoundMessage: "", loading: false })
@@ -55,7 +55,7 @@ export default function SideBarMain({ socket, openSideProfiBar }) {
             <div className="overflow-auto" style={{ minHeight: "75vh", maxHeight:"75vh" }}>
                 {/* component chat */}
                 {state.friends.map(item => {
-                    if(item.id_user == data.id_user){
+                    if(item.id_user === data.id_user){
                         return ""
                     }else{
                         return <div className="friends" onClick={() => {
@@ -78,7 +78,7 @@ export default function SideBarMain({ socket, openSideProfiBar }) {
                                         </div>
                                     </div>
                                     <div className="align-self-center">
-                                        <div style={{fontSize:"12px"}} className={item.online == 1 ? "text-success border border-success bg-transparent py-1 px-3 rounded-md" : "text-danger border border-danger bg-transparent py-1 px-3 rounded-md"}>{item.online == 1 ? "Online" : "Offline"}</div>
+                                        <div style={{fontSize:"12px"}} className={item.online === 1 ? "text-success border border-success bg-transparent py-1 px-3 rounded-md" : "text-danger border border-danger bg-transparent py-1 px-3 rounded-md"}>{item.online === 1 ? "Online" : "Offline"}</div>
                                         {/* <p className="m-0">15:30</p>
                                         <p className="rounded-circle bg-main text-white p-2 mx-auto text-center m-0" style={{ fontSize: "12px", width: "30px", height: "30px" }}>5</p> */}
                                     </div>

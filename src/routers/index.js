@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch} from 'react-redux'
 import { Register, Login, Main } from '../pages'
-import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, } from 'react-router-dom'
 import {AppRoute, AuthRoutes} from '../modules'
 import axios from 'axios'
 import io from 'socket.io-client'
@@ -20,7 +20,7 @@ export default function Routers() {
                     payload:res.data.data
                 })
             })
-            .catch(err => {
+            .catch(() => {
                 localStorage.removeItem("token")
             })
         }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Routers from './routers'
 import {Provider} from 'react-redux'
 import store from './configs/redux/index'

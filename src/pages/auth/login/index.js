@@ -30,11 +30,11 @@ export default function Login() {
             localStorage.setItem("token", res.data.token)
             history.push("/app/main")
         }).catch(err => {
-            if(err.response.data.message == "email belum terverifikasi"){
+            if(err.response.data.message === "email belum terverifikasi"){
                 setState({...state, errMessage :  {...state.errMessage, email : err.response.data.message, pass:""}})
-            }else if (err.response.data.message == "email belum terdaftar"){
+            }else if (err.response.data.message === "email belum terdaftar"){
                 setState({...state, errMessage :  {...state.errMessage, email : err.response.data.message, pass:""}})
-            }else if(err.response.data.message == "Password salah"){
+            }else if(err.response.data.message === "Password salah"){
                 setState({...state, errMessage :  {...state.errMessage, pass : err.response.data.message, email:""}})
             }else{
                 setState({...state, errMessage :  {...state.errMessage, email : err.response.data.message, pass:""}})

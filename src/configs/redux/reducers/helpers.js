@@ -2,7 +2,6 @@ const initialstate = {
     isOpen: false,
     dataReciever: {},
     chatBoardMobileOpen: false,
-    chatBoardMobileOpen: false
 }
 
 const helper = (state = initialstate, action) => {

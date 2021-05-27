@@ -15,11 +15,11 @@ export default function Register() {
         passwordErrorField:""
     })
     const handleSubmit = () => {
-        if(state.username.length == 0){
+        if(state.username.length === 0){
             setState({...state, usernameErrorField:"field tidak boleh kosong"})
-        }else if(state.email.length == 0){
+        }else if(state.email.length === 0){
             setState({...state, emailErrorField:"field tidak boleh kosong"})
-        }else if(state.password.length == 0){
+        }else if(state.password.length === 0){
             setState({...state, passwordErrorField:"field tidak boleh kosong"})
         }else{
             axios({
@@ -36,9 +36,9 @@ export default function Register() {
                 history.push("/auth/login")
             })
             .catch(err=>{
-                if(err.response.data.message == "username sudah digunakan"){
+                if(err.response.data.message === "username sudah digunakan"){
                     setState({...state, usernameErrorField:err.response.data.message})
-                }else if(err.response.data.message == "email sudah digunakan"){
+                }else if(err.response.data.message === "email sudah digunakan"){
                     setState({...state, emailErrorField:err.response.data.message})
                 }
             })
