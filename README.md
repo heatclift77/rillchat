@@ -37,8 +37,6 @@ npm install / npm -i
 ```
 npm start
 ```
-- Open Command/Terminal
-- Type ``` npm start``` To Start Website
 
 ## 🔎 Preview Design <a name = "preview"></a>
 <span>
