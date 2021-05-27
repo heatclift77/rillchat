@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=600px height=300px src="https://iili.io/Bk61A7.jpg" alt="logo"></a>
+ <img width=300px height=120px src="https://iili.io/BrX1P2.png" alt="logo"></a>
 </p>
 <h3 align="center">Rillchat</h3>
 <div align="center">
