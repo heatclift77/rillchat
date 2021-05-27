@@ -25,7 +25,7 @@ export default function SideBarMain({ socket, openSideProfiBar }) {
                 setState({...state, friends:friends})
             })
         }
-    }, [socket])
+    }, [socket, state])
     const handleChange = (e) => {
         setState({ ...state, loading: true })
         axios.get(`${process.env.REACT_APP_SERVER}/v1/user/search?id_user=${data.id_user}&key=${e.target.value}`)
@@ -69,8 +69,8 @@ export default function SideBarMain({ socket, openSideProfiBar }) {
                             <div className="align-self-center px-4 py-3 c-pointer" style={{ width: "100%" }}>
                                 <div className="d-flex justify-content-between">
                                     <div className="d-flex">
-                                        <div className="rounded-md d-flex justify-content-center me-3 align-self-center" style={{ width: "60px", height: "0px" }}>
-                                            <img src={item.img_profil} className="w-100 align-self-center rounded-md" />
+                                        <div className="rounded-md d-flex justify-content-center me-3 align-self-center overflow-hidden" style={{ width: "60px", height: "60px" }}>
+                                            <img src={item.img_profil} className="w-100 align-self-center rounded-md" alt="profile" />
                                         </div>
                                         <div className="align-self-center">
                                             <h5 className="m-0 mb-1">{item.username}</h5>

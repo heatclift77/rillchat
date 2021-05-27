@@ -121,7 +121,7 @@ export default function Main({ socket }) {
                 }
             })
         }
-    }, [socket, scroll])
+    }, [socket])
     useEffect(() => {
         if (socket) {
             socket.off('recieve_message');
@@ -238,7 +238,7 @@ export default function Main({ socket }) {
                             <div className="d-flex justify-content-between">
                                 <div className="d-flex">
                                     <div className="rounded-md d-flex justify-content-center me-3 align-self-center" style={{ width: "60px", height: "0px" }}>
-                                        <img src={dataReciever.img_profil} className="w-100 align-self-center rounded-md" alt="image-profile" />
+                                        <img src={dataReciever.img_profil} className="w-100 align-self-center rounded-md" alt="profile" />
                                     </div>
                                     <div className="align-self-center">
                                         <h5 className="m-0">{dataReciever.username}</h5>
@@ -265,13 +265,13 @@ export default function Main({ socket }) {
                                                 <p className="m-0" style={{ maxWidth: "350px" }}>{item.message}</p>
                                             </div>
                                             <div className="rounded-md d-flex justify-content-center ms-3 align-self-start overflow-hidden" style={{ width: "60px", maxHeight: "60px" }}>
-                                                <img src={data.img_profil} className="w-100 align-self-center rounded-md" alt="image-rofile" />
+                                                <img src={data.img_profil} className="w-100 align-self-center rounded-md" alt="rofile" />
                                             </div>
                                         </div>
                                     } else {
                                         return <div className="d-flex justify-content-start my-2">
                                             <div className="rounded-md d-flex justify-content-center me-3 align-self-end" style={{ width: "60px", maxHeight: "60px" }}>
-                                                <img src={dataReciever.img_profil} className="w-100 align-self-center rounded-md" alt="image-rofile" />
+                                                <img src={dataReciever.img_profil} className="w-100 align-self-center rounded-md" alt="rofile" />
                                             </div>
                                             <div className="p-4 text-white bg-main shadow d-flex" style={{ borderTopRightRadius: "2rem", borderBottomRightRadius: "2rem", borderTopLeftRadius: "2rem", borderBottomLeftRadius: "0.8rem", maxWidth: "400px", wordWrap: "break-word" }}>
                                                 <p className="m-0" style={{ maxWidth: "350px" }}>{item.message}</p>
