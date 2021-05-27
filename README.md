@@ -25,6 +25,18 @@ online offline status, edit all profile data, ofcourse realtime chat. build with
 ```
 git clone https://github.com/heatclift77/rillchat.git
 ```
+- Go to the folder
+```
+cd rillchat
+```
+- install package
+```
+npm install / npm -i
+```
+- done
+```
+npm start
+```
 - Open Command/Terminal
 - Type ``` npm start``` To Start Website
 
