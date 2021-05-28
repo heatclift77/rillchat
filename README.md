@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=600px height=300px src="https://iili.io/Bk61A7.jpg" alt="logo"></a>
+ <img width=300px height=120px src="https://iili.io/BrX1P2.png" alt="logo"></a>
 </p>
 <h3 align="center">Rillchat</h3>
 <div align="center">
@@ -25,8 +25,18 @@ online offline status, edit all profile data, ofcourse realtime chat. build with
 ```
 git clone https://github.com/heatclift77/rillchat.git
 ```
-- Open Command/Terminal
-- Type ``` npm start``` To Start Website
+- Go to the folder
+```
+cd rillchat
+```
+- install package
+```
+npm install / npm -i
+```
+- done
+```
+npm start
+```
 
 ## 🔎 Preview Design <a name = "preview"></a>
 <span>
