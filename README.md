@@ -48,7 +48,7 @@ npm start
 
 
 ## 💻 Live Demo <a name = "live_demo"></a>
-https://github.com/heatclift77/rillchat
+https://rillchat.netlify.app
 
 ## Backend
 #### Repo Backend : https://github.com/heatclift77/rilchat-BE
