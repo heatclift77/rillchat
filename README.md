@@ -48,7 +48,7 @@ npm start
 
 
 ## 💻 Live Demo <a name = "live_demo"></a>
-Coming Soon
+https://github.com/heatclift77/rillchat
 
 ## Backend
 #### Repo Backend : https://github.com/heatclift77/rilchat-BE
