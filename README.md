@@ -12,8 +12,8 @@
 ---
 
 ## 🧐 About
-realtime chat web app made with socket.io for all realtime features, there are several features such as authentication, 
-online offline status, edit all profile data, ofcourse realtime chat. build with Reactjs in frontend side and Expressjs in the backend side
+Realtime chat web app made with socket.io for all realtime features, there are several features such as authentication, 
+online offline status, edit all profile data and realtime chat. build with Reactjs in frontend side and Expressjs in the backend side
 
 ## 🔖Build With
 - ReactJS
@@ -48,7 +48,7 @@ npm start
 
 
 ## 💻 Live Demo <a name = "live_demo"></a>
-Coming Soon
+https://rillchat.netlify.app
 
 ## Backend
 #### Repo Backend : https://github.com/heatclift77/rilchat-BE
