@@ -24,6 +24,7 @@ export default function Routers() {
                 localStorage.removeItem("token")
             })
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     const setupSocket = () => {
         const socket = io(process.env.REACT_APP_SERVER)
@@ -31,6 +32,7 @@ export default function Routers() {
     }
     useEffect(()=>{
         setupSocket()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     return (
         <Router>

@@ -111,6 +111,7 @@ export default function Main({ socket }) {
     }
     useEffect(() => {
         setState({ ...state, avatar: data.img_profil })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data])
     useEffect(() => {
         if (socket) {
@@ -121,6 +122,7 @@ export default function Main({ socket }) {
                 }
             })
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [socket])
     useEffect(() => {
         if (socket) {
@@ -133,6 +135,7 @@ export default function Main({ socket }) {
                 }
             })
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [socket, dataReciever.id_user, scroll])
     return (
         <div className="container-fluid">
